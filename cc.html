@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>회원가입</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f3e3;
+      color: #ff1493;
+      padding: 30px;
+      font-family: 'Noto Sans', sans-serif;
+    }
+   h2 {
+      text-align: center;
+      font-size: 28px;
+      color: #ff69b4;
+      text-shadow: 1px 1px 2px #ff00ff;
+    }
+
+    .form-box {
+      background-color: #fff0f5;
+      border: 2px dashed #ff69b4;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    .form-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .form-row label {
+      width: 70px;
+      font-weight: bold;
+    }
+
+    .form-row input[type="text"],
+    .form-row input[type="password"], 
+    .form-row input[type="tel"], 
+    .form-row input[type="date"], 
+    .form-row input[type="email"],
+    .form-row input[type="ddress"],
+    .form-row select {
+  flex: 1;
+  padding: 6px;
+  border: 2px solid #ffb6c1;
+  border-radius: 6px;
+  background-color: white;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+    {
+  flex: 1;
+  padding: 6px;
+  border: 2px solid #ffb6c1;
+  border-radius: 6px;
+}
+
+    .form-row.gender label {
+      width: 70px;
+    }
+
+    .form-row.gender .radio-group {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    hr {
+      border: 1px dashed #ff69b4;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>📝 회원가입</h2>
+  <img src="567.jpg" width="200" height: auto; alt="me" style="display: block; margin: 0 auto;">
+  <hr>
+
+  <form class="form-box">
+    <div class="form-row">
+      <label for="name">이름   :</label>
+      <input type="text" id="name" name="name">
+    </div>
+
+    <div class="form-row">
+      <label for="id">ID   :</label>
+      <input type="text" id="id" name="id">
+    </div>
+
+    <div class="form-row">
+      <label for="pw">PW  :</label>
+      <input type="password" id="pw" name="pw" maxlength="7">
+    </div>
+
+     <div class="form-row">
+      <label for="phone">핸드폰 :</label>
+      <input type="tel" id="tel" name="phone"  maxlength="11">
+    </div>
+
+        <div class="form-row">
+      <label for="birthday">생년월일 :</label>
+      <input type="date" id="birthday" name="birthday">
+    </div>
+
+    <div class="form-row">
+  <label for="email">이메일 :</label>
+  <input type="email" id="email" name="email" placeholder="example@example.com">
+</div>
+
+<div class="form-row">
+  <label for="address">주소 :</label>
+  <input type="text" id="address" name="address" placeholder="예: 서울시 강남구">
+</div>
+
+<div class="form-row gender">
+      <label>성별   :</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="male"> 남</label>
+        <label><input type="radio" name="gender" value="female"> 여</label>
+      </div>
+      </div>
+
+<div class="form-row">
+  <label for="hobby">직업 :</label>
+  <select id="hobby" name="hobby">
+    <option>학생</option>
+    <option>회사원</option>
+    <option>자영업</option>
+    <option>프리랜서</option>
+  </select>
+</div>
+
+
+  </form>
+
+  <button type="submit" 
+        style="display: block; 
+               margin: 20px auto 0; 
+               background-color: #ff69b4; 
+               color: white; 
+               border: none; 
+               padding: 10px 20px; 
+               border-radius: 8px; 
+               font-size: 16px; 
+               cursor: pointer;">
+  가입하기
+</button>
+
+
+</body>
+</html>
