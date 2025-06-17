@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>미래인재학부 소개</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans', sans-serif;
+      background-color: #fffafc;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #f0a1c5;
+    }
+
+    header h1 {
+      color: #ff1493;
+      margin: 0 30px;
+    }
+
+    nav a {
+    margin-left: 30px;
+      text-decoration: none;
+      color: #ff1493;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .main-container {
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("robot.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      position: relative;
+    }
+
+    .overlay-box {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .overlay-box h2 {
+      font-size: 28px;
+      color: #d63384;
+      margin-bottom: 20px;
+    }
+
+    .overlay-box p {
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+
+    .overlay-box a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff69b4;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .main-container {
+        padding: 30px;
+        height: auto;
+      }
+
+      .overlay-box {
+        padding: 20px;
+      }
+
+      .overlay-box h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+   <h1><a href="main.html" style="text-decoration: none; color: #ff1493;">한성대학교</a></h1>
+    <nav>
+       <a href="Department.html">미래인재학부 소개</a>
+      <a href="my.html">자기소개</a>
+      <a href="cc.html">회원가입</a>
+      <a href="event.html">이벤트 목록</a>
+    </nav>
+  </header>
+
+  <div class="main-container">
+    <div class="overlay-box">
+      <h2>미래를 여는 창의융합인재</h2>
+      <p>
+        한성대학교 미래인재학부는 급변하는 사회 속에서 창의성과 <br>실무 능력을 갖춘 융합형 인재를 양성합니다.<br><br>
+        프로젝트 기반 학습과 산업 연계형 커리큘럼을 통해 <br>학생 개개인의 성장과 미래를 설계합니다.
+      </p>
+      <a href="https://www.hansung.ac.kr/" target="_blank">한성대학교 바로가기</a>
+    </div>
+  </div>
+
+</body>
+</html>
