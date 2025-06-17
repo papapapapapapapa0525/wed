@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>한성대학교</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    header {
+      background: #fff;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      color: #ff69b4;
+      font-size: 26px;
+      margin: 0;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff1493;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+ .main-container {
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("24-003.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      position: relative;
+    }
+
+
+    .overlay-box {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 700px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    }
+
+    .overlay-box h2 {
+      color: #d10072;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .overlay-box p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #ff1493;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #fff;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><a href="ee.html" style="text-decoration: none; color: #ff1493;">한성대학교</a></h1>
+    <nav>
+     <a href="Department.html">미래인재학부 소개</a>
+      <a href="my.html">자기소개</a>
+      <a href="cc.html">회원가입</a>
+      <a href="event.html">이벤트 목록</a>
+    </nav>
+  </header>
+
+  <div class="main-container">
+    <div class="overlay-box">
+      <h2>미래를 여는 창의융합 인재</h2>
+      <p>
+        한성대학교 미래인재학부는 급변하는 사회 속에서 창의성과<br>
+        실무 능력을 갖춘 융합형 인재를 양성합니다.<br><br>
+        프로젝트 기반 학습과 산업 연계형 커리큘럼을 통해<br>
+        학생 개개인의 성장과 미래를 설계합니다.
+      </p>
+      <a href="https://www.hansung.ac.kr" class="btn">한성대학교 바로가기</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 한성대학교 미래인재학부
+  </footer>
+
+</body>
+</html>
