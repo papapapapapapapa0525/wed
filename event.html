@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>이벤트 목록</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet" />
+  <style>
+
+    .move-img {
+  transition: transform 0.3s ease;
+    width: 200px; 
+    transition: transform 0.3s ease;
+}
+
+.move-img:hover {
+  transform: translateX(10px);
+}
+
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    #p {
+      text-align: center;
+      margin: 20px auto;
+      max-width: 700px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    header {
+      background: #fff;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      color: #ff69b4;
+      font-size: 26px;
+      margin: 0;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ff1493;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .main-container {
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("24-003.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      position: relative;
+    }
+
+    .overlay-box {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 700px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .overlay-box h2 {
+      color: #d10072;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .overlay-box p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #ff1493;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      font-size: 16px;
+    }
+
+    footer {
+      background: #fff;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 14px;
+    }
+  </style>
+
+  <script>
+function calculate() {
+	let exp = document.getElementById("exp");
+	let result = document.getElementById("result");
+	result.value = eval(exp.value);
+}
+</script>
+
+</head>
+<body>
+
+  <header>
+    <h1><a href="main.html" style="text-decoration: none; color: #ff1493;">한성대학교</a></h1>
+    <nav>
+      <a href="Department.html">미래인재학부 소개</a>
+      <a href="my.html">자기소개</a>
+      <a href="cc.html">회원가입</a>
+      <a href="event.html">이벤트 목록</a>
+    </nav>
+  </header>
+
+  <div class="main-container">
+    <div class="overlay-box">
+      <h2>이벤트1</h2>
+      <p><b></b><br>아래 내용에 마우스 올려둘 경우<br>핑크색 배경으로 변경됨</b></p>
+      <p
+        onmouseover="this.style.backgroundColor='pink'"
+        onmouseout="this.style.backgroundColor='transparent'">
+        한성대학교 미래인재학부는 급변하는 사회 속에서 창의성과<br />
+        실무 능력을 갖춘 융합형 인재를 양성합니다.<br /><br />
+        프로젝트 기반 학습과 산업 연계형 커리큘럼을 통해<br />
+        학생 개개인의 성장과 미래를 설계합니다.
+      </p>
+      <a href="https://www.hansung.ac.kr" class="btn" target="_blank" rel="noopener noreferrer">한성대학교 바로가기</a>
+    </div>
+  </div>
+
+  <div class="main-container" style="background:none; height:auto; padding:30px;">
+    <div class="overlay-box">
+      <h2>이벤트 2</h2>
+      <p id="p"><b>아래 버튼에 올려둘 경우<br />팝업창이 뜹니다</b></p>
+      <button class="btn" onclick="f(event)">마우스를 올려 보세요</button>
+    </div>
+  </div>
+
+  <script>
+    function f(e) {
+      alert('이벤트: ' + e.type);
+    }
+
+    document.getElementById("p").onmouseover = f;
+  </script>
+
+
+<div class="main-container" style="background: none; height: auto; padding: 30px;">
+  <div class="overlay-box">
+      <h2>이벤트 3</h2>
+<b>계산하고자 하는 수식을
+입력하고 계산 버튼을 눌러보세요.</b>
+<br>
+<br>
+<form>
+식 <input type="text" id="exp" value=""><br>
+결과 <input type="text" id ="result"> 
+<input type="button" value=" 계산하기  "
+	onclick="calculate()">
+</form>
+</div>
+</div>
+
+<div class="main-container" style="background: none; height: auto; padding: 30px;">
+  <div class="overlay-box">
+      <h2>이벤트 4</h2>
+<script>
+	document.write("<h3>하루지식</h3>");
+	document.write("3 + 5 는 <br>");	
+	document.write("<mark>8 입니다.</mark>");
+   </script>
+</div>
+</div>
+
+  <div class="main-container" style="background: none; height: auto; padding: 30px;">
+  <div class="overlay-box">
+      <h2>이벤트 5</h2>
+<div class="image-container">
+    <p><b>이미지에 마우스를 올리면 오른쪽으로 살짝 이동합니다.</b></p>
+    <img src="456.png" alt="이벤트 이미지" class="move-img">
+</div>
+</div>
+</body>
+</html>
